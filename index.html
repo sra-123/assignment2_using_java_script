@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First File</title>
+        <meta charset="utf-9">
+    </head>
+    <body>
+        <h style="color:rgb(255, 0, 128);font-style:italic;font-size:30px;">ASSIGNMENT-2</h>
+        <br><br>
+        <table style="border:1px solid;margin-left:600px;margin-top:200px">
+            
+            <tr>
+
+                <td><input id="text_1" type="text" placeholder="Username" style="border-color:black;width:230px;margin-top:20px;margin-left:20px;margin-right:20px;height:25px;border-radius:5px"></td>
+
+            </tr>
+            <tr>
+                <td><input id="text_2" type="text" placeholder="Password" style="border-color:black;width:230px;height:25px;margin-top:20px;margin-left:20px;margin-right:20px;border-radius:5px"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="login" style="background-color:aqua;margin-left:80px;margin-top:20px;margin-bottom:20px;width:100px;height:25px" onclick="fun()"></td>
+        
+            </tr>
+
+        </table>
+    
+        <p id="p_1"></p>
+        <script>
+            function fun(){
+                var val=document.getElementById("text_1").value;
+                var val1=document.getElementById("text_2").value;
+                if(val=="sravya" && val1=="sravya@123"){
+                    window.location.href="Example-9.html";
+                }
+                else{
+                   alert("Incorrect Username Or Password"); 
+                }
+
+            }
+
+        </script>
+    </body>
+</html>
